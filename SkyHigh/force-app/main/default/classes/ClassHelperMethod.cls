@@ -8,8 +8,5 @@ public class ClassHelperMethod {
             }
         } 
     }
-    public static void updateClassAddress(List<Class__c> cList){
-        
-    }
  
 }

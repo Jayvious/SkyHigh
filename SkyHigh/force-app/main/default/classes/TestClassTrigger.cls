@@ -7,6 +7,7 @@ private class TestClassTrigger{
         Integer i = 0;
         Boolean change = false;
         Student__c testS = null;
+        //populate parent fields outside of my control flow
         while(i < 30){
             if(!change){
                  	testS = new Student__c(
@@ -74,6 +75,7 @@ private class TestClassTrigger{
         List<Junction_Class__c> jcTest = new List<Junction_Class__c>();
         Junction_Class__c jc = null;
         i = 0;
+        //do one class with the loop 
         while(i < 15){
             if(change){
                 jc = new Junction_Class__c(

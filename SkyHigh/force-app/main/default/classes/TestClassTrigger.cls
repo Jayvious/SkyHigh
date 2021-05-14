@@ -15,11 +15,7 @@ private class TestClassTrigger{
                     Grade_Level__c = '12th',
                     GPA__c = 4.0,
                     Approved_for_Gradution__c = false,
-                    Graduation_Date__c = Date.newInstance(2021, 5, 10),
-                    Behavior__c = 'Good',
-                    Parent_First_Name__c = 'Test',
-                    Parent_Last_Name__c = 'Parent',
-                    Parent_Email__c = 'TestParent@aol.com'
+                    Graduation_Date__c = Date.newInstance(2021, 5, 10)
                 );
                 change = true;
             } else{
@@ -28,11 +24,7 @@ private class TestClassTrigger{
                     Grade_Level__c = '11th',
                     GPA__c = 4.0,
                     Approved_for_Gradution__c = false,
-                    Graduation_Date__c = Date.newInstance(2022, 5, 10),
-                    Behavior__c = 'Good',
-                    Parent_First_Name__c = 'Test',
-                    Parent_Last_Name__c = 'Parent',
-                    Parent_Email__c = 'TestParent@aol.com'
+                    Graduation_Date__c = Date.newInstance(2022, 5, 10)
                 );
                		change = false;
             }

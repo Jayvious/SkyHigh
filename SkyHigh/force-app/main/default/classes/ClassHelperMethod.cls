@@ -11,10 +11,9 @@ public class ClassHelperMethod {
     }
 
     public static void junctionClassCheck(List<Junction_Class__c> nList){
-        
-        for( Junction_Class__c curr : [SELECT Student__c, Class__c FROM Junction_Class__c]){
+        for( Junction_Class__c curr : [SELECT Student__r.Name, Class__c FROM Junction_Class__c]){
             for(Junction_Class__c nJcs : nList){
-                if(curr.Student__c == nJcs.Student__c){
+                if(curr.Student__r.Name == nJcs.Student__r.Name){
                     nJcs.addError('Duplicate Students are not allowed. Please review who you are inserting.');
                 }
             }

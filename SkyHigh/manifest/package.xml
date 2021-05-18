@@ -32,5 +32,19 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>CustomObjects</name>
+    </types>
+    <types>
+        <members>ClubAddress</members>
+        <members>ClassAddress</members>
+        <members>Club_Junction_Object_Creation</members>
+        <members>Create_Class_Junction_Record</members>
+        <members>Graduation_Submission</members>
+        <members>Teacher_Assigned_Orientation</members>
+        <members>Weekly_School_Update</members>
+        <name>Flow</name>
+    </types>
     <version>51.0</version>
 </Package>

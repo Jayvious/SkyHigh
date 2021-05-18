@@ -33,7 +33,14 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Campus__c</members>
+        <members>Class__c</members>
+        <members>Club__c</members>
+        <members>Junction_Class__c</members>
+        <members>Junction_Club__c</members>
+        <members>Student__c</members>
+        <members>Student_Counsoler__c</members>
+        <members>Teacher__c</members>
         <name>CustomObjects</name>
     </types>
     <types>
@@ -45,6 +52,33 @@
         <members>Teacher_Assigned_Orientation</members>
         <members>Weekly_School_Update</members>
         <name>Flow</name>
+    </types>
+    <types>
+        <members>Club_Assignment</members>
+        <members>Class_Assignment</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Principal</members>
+        <members>Student_Counsoler</members>
+        <members>Teacher</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>*<members>
+        <name>CustomTabs</name>
+    <types>
+    <types>
+        <members>Sky_High</members>
+        <name>CustomApplications</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Workflow</name>
     </types>
     <version>51.0</version>
 </Package>

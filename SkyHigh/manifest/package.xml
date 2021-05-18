@@ -41,7 +41,7 @@
         <members>Student__c</members>
         <members>Student_Counsoler__c</members>
         <members>Teacher__c</members>
-        <name>CustomObjects</name>
+        <name>CustomObject</name>
     </types>
     <types>
         <members>ClubAddress</members>

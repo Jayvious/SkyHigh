@@ -20,6 +20,145 @@
         <members>*</members>
         <name>ApexTrigger</name>
     </types>
+    
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplicationComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
+	</types>
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Advertisement__c</members>
+        <members>Bit__c</members>
+        <members>Viewer__c</members>
+        <members>View__c</members>
+        <members>Discount__c</members>
+        <members>Ad_view__c</members>
+        <members>Sale__c</members>
+        <members>Supplier__c</members>
+        <members>Sponsor__c</members>
+        <members>Merchandise__c</members>
+        <members>Streamer__c</members>
+        <members>Stream__c</members>
+        <name>CustomObject</name>
+    </types>
+    <!--<types>  Why? Why would it not give an error back for the ones that do not take wildcards??
+        <members>OpenFolder</members>
+        <members>OpenFolder/Ad_views_30_Days_5J9</members>
+        <members>OpenFolder/New_Sales_with_Viewer_Report_OPx</members>
+        <members>OpenFolder/New_Viewers_with_Bits_Report_Zas</members>
+        <name>Report</name>
+    </types>
+     <types>  use salesforce work bench (Metadata Types & Components) to find the dashboard id, WorkflowAlert names, and WorkflowTask Names
+        <members>OpenFolder</members>
+        <members>OpenFolder/LpYkeUBiWNYfiGZpXZuZjlKjaEAfSD</members>
+        <name>Dashboard</name>
+    </types>-->
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types> <!-- Found in Classic Email Templates in the setup-->
+        <members>unfiled$public/New_Sponsor</members>
+         <members>unfiled$public/Merchandise_Creation_Email_Alert</member>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Merchandise__c.Merchandise_Email_Alert</members>
+        <members>Sponsor__c.Sponsor_Email_Alert</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
+        <members>Merchandise__c.Delete_Merchandise_Record</members>
+        <name>WorkflowTask</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSetGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <!--<members>Delete_Merchandise_Record</members>-->
+        <name>Workflow</name>
+    </types>
+    <version>51.0</version>
+</Package>
+<!--<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTestSuite</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
     <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>
@@ -81,4 +220,4 @@
         <name>Workflow</name>
     </types>
     <version>51.0</version>
-</Package>
+</Package>-->

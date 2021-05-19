@@ -3,7 +3,7 @@ public class ApprovesStudent {
         //List<Student__c> approvedForD = new List<Student__c>();
         for(Student__c s : sList ){
             if(s.Grade_Level__c == '12th'){
-                if(!s.Approved_for_Gradution__c|| s.Graduation_Date__c < Date.today()){
+                if(!s.Approved_for_Gradution__c && s.Graduation_Date__c < Date.today()){
                     s.addError('Student is not allowed to be deleted');
                 }
                //approvedForD.add(s);

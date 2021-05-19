@@ -93,10 +93,7 @@
             Student__c = test.Id,
             Class__c = tClass[1].Id
         );
-        Test.startTest();
         insert nJc;
-        Test.stopTest();
     }
 
 }
-

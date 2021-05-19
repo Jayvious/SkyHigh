@@ -49,7 +49,7 @@ private class TestStudentTrigger {
     @isTest static void nonApprovedDelete(){
         List<Student__c> test = [SELECT Name, Grade_Level__c, GPA__c, Approved_for_Gradution__c, Graduation_Date__c, Behavior__c
                                 FROM Student__c];
-        Database.delete(test, false);
+        Database.delete(test);
         
     }
 }

@@ -33,20 +33,40 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>Campus__c</members>
+        <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplicationComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
+	</types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Class__c</members>
         <members>Club__c</members>
         <members>Junction_Class__c</members>
         <members>Junction_Club__c</members>
         <members>Student__c</members>
-        <members>Student_Counsoler__c</members>
+        <members>Student_Couselor__c</members>
+        <members>Campus__c</members>
         <members>Teacher__c</members>
         <name>CustomObject</name>
     </types>
     <types>
-        <members>ClubAddress</members>
-        <members>ClassAddress</members>
+        <members>Sky_High</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>Club_Junction_Object_Creation</members>
+        <members>ClassAddress</members>
+        <members>ClubAddress</members>
         <members>Create_Class_Junction_Record</members>
         <members>Graduation_Submission</members>
         <members>Teacher_Assigned_Orientation</members>
@@ -54,14 +74,27 @@
         <name>Flow</name>
     </types>
     <types>
-        <members>Club_Assignment</members>
-        <members>Class_Assignment</members>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSetGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>QuickAction</name>
     </types>
     <types>
-        <members>Principal</members>
-        <members>Student_Counsoler</members>
-        <members>Teacher</members>
+        <members>*</members>
         <name>Role</name>
     </types>
     <types>
@@ -69,16 +102,38 @@
         <name>SharingRules</name>
     </types>
     <types>
-        <members>*<members>
-        <name>CustomTabs</name>
+        <members>*</members>
+        <!--<members>Delete_Merchandise_Record</members>-->
+        <name>Workflow</name>
+    </types>
     <types>
+        <members>Teacher__c.Teacher_Orientation</members>
+        <members>Club__c.Create_A_Club</members>
+        <name>WorkflowTask</name>
+    </types>
     <types>
-        <members>Sky_High</members>
-        <name>CustomApplications</name>
+        <members>unfiled$public/Weekly_Parent_Checkin</members>
+        <members>unfiled$public/Teacher_Orientation</members>
+        <members>unfiled$public/Student_Grade_Warning</members>
+        <members>unfiled$public/Approval_for_Graduation</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Student__c.Email_to_Parents_about_Student_Grades</members>
+        <members>Student__c.Weekly_School_Updates</members>
+        <members>Teacher__c.Orientation_Invitation_for_all_Bachelor_Degree_Teachers</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
+        <members>Student__c.Grad_Is_Ready</members>
+        <members>Student__c.Held_For_Year</members>
+        <members>Student__c.Student_is_Suspened</members>
+        <members>Student__c.Not_Suspended_But_Has_Warning</members>
+        <name>WorkflowFieldUpdate</name>
     </types>
     <types>
         <members>*</members>
-        <name>Workflow</name>
+        <name>FlexiPage</name>
     </types>
     <version>51.0</version>
 </Package>

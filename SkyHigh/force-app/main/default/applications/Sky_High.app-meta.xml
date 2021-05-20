@@ -10,8 +10,8 @@
     </actionOverrides>
     <brand>
         <headerColor>#E78B0A</headerColor>
-        <logo>SK</logo>
-        <logoVersion>1</logoVersion>
+        <!--<logo>SK</logo>
+        <logoVersion>1</logoVersion>-->
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <description>Sky High Org for tracking our student and the relationships they have with the other objects</description>

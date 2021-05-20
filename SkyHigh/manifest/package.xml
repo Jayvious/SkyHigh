@@ -74,7 +74,15 @@
         <name>Flow</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Campus__c-Campus Layout</members>
+        <members>Class__c-Class Layout</members>
+        <members>Club__c-Club Layout</members>
+        <members>Junction_Class__c-Junction Layout</members>
+        <members>Junction_Club__c-Junction-Club Layout</members>
+        <members>Student__c-SC-Layout</members>
+        <members>Student__c-Student Layout</members>
+        <members>Student_Couselor__c-Student Counselor Layout</members>
+        <members>Teacher__c-Teacher Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -85,10 +93,12 @@
         <members>*</members>
         <name>PermissionSetGroup</name>
     </types>
-    <types>
-        <members>*</members>
+    <!--<types>
+        <members>Custom-SC</members>
+        <members>Custom-Principal</members>
+        <members>Custom-Teacher</members>
         <name>Profile</name>
-    </types>
+    </types>-->
     <types>
         <members>*</members>
         <name>QuickAction</name>
@@ -98,7 +108,24 @@
         <name>Role</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Campus__c</members>
+        <members>Candidate__c</members>
+        <members>Club__c</members>
+        <members>Job_Application__c</members>
+        <members>Job_Posting_Site__c</members>
+        <members>Lightsaber__c</members>
+        <members>Moderator__c</members>
+        <members>Offer__c</members>
+        <members>Outbound_Message__c</members>
+        <members>Position__c</members>
+        <members>Position_Approval_Routing__c</members>
+        <members>Referral__c</members>
+        <members>Salary__c</members>
+        <members>Shipment__c</members>
+        <members>Student__c</members>
+        <members>Student_Couselor__c</members>
+        <members>Teacher__c</members>
+        <members>Zip_Code__c</members>
         <name>SharingRules</name>
     </types>
     <types>

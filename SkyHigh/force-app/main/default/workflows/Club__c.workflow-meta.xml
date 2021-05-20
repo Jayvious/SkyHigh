@@ -8,7 +8,7 @@
         <fields>Club_Size__c</fields>
         <fields>Id</fields>
         <includeSessionId>true</includeSessionId>
-        <integrationUser>jayviouswilliams@wise-shark-3oi0cq.com</integrationUser>
+        <integrationUser>admin@dex403.56931.com</integrationUser>
         <name>Club is FIlled</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
@@ -25,7 +25,7 @@
     </rules>
     <tasks>
         <fullName>Create_A_Club</fullName>
-        <assignedTo>hzeaulhg@reichwerden.me</assignedTo>
+        <assignedTo>hzeaulhg1@reichwerden.me</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>3</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>

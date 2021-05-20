@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fieldPermissions>
+    <!--<fieldPermissions>
         <editable>false</editable>
         <field>Account.Active__c</field>
         <readable>false</readable>
@@ -59,7 +59,7 @@
         <editable>false</editable>
         <field>Case.SLAViolation__c</field>
         <readable>false</readable>
-    </fieldPermissions>
+    </fieldPermissions>-->
     <fieldPermissions>
         <editable>false</editable>
         <field>Class__c.Address__c</field>
@@ -95,7 +95,7 @@
         <field>Club__c.Club_Size__c</field>
         <readable>false</readable>
     </fieldPermissions>
-    <fieldPermissions>
+    <!--<fieldPermissions>
         <editable>false</editable>
         <field>Contact.Languages__c</field>
         <readable>false</readable>
@@ -164,7 +164,7 @@
         <editable>false</editable>
         <field>Opportunity.TrackingNumber__c</field>
         <readable>false</readable>
-    </fieldPermissions>
+    </fieldPermissions>-->
     <fieldPermissions>
         <editable>false</editable>
         <field>Student_Couselor__c.Education__c</field>

@@ -5,7 +5,7 @@
         <description>Orientation Invitation for all Bachelor Degree Teachers</description>
         <protected>false</protected>
         <recipients>
-            <recipient>jayviouswilliams@wise-shark-3oi0cq.com</recipient>
+            <recipient>admin@dex403.56931.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -13,7 +13,7 @@
     </alerts>
     <tasks>
         <fullName>Teacher_Orientation</fullName>
-        <assignedTo>jayviouswilliams@wise-shark-3oi0cq.com</assignedTo>
+        <assignedTo>admin@dex403.56931.com</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>20</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>

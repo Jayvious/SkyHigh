@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <!-- The package.xml with the full list of required metadata fields is in the commit done before 5/21/2021 (I.E. commit - d623ca1) -->
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
@@ -8,7 +8,7 @@
         <members>*</members>
         <name>ApexComponent</name>
     </types>
-    <types>
+    <types> <!-- this refers to visual force pages -->
         <members>*</members>
         <name>ApexPage</name>
     </types>
@@ -20,35 +20,7 @@
         <members>*</members>
         <name>ApexTrigger</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApprovalProcess</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomApplicationComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomField</name>
-	</types>
-    <types>
-        <members>*</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
+    <!--<types> We shouldn't need these, but gonna leave them just in case.
         <members>Class__c</members>
         <members>Club__c</members>
         <members>Junction_Class__c</members>
@@ -58,109 +30,6 @@
         <members>Campus__c</members>
         <members>Teacher__c</members>
         <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Sky_High</members>
-        <name>CustomApplication</name>
-    </types>
-    <types>
-        <members>Club_Junction_Object_Creation</members>
-        <members>ClassAddress</members>
-        <members>ClubAddress</members>
-        <members>Create_Class_Junction_Record</members>
-        <members>Graduation_Submission</members>
-        <members>Teacher_Assigned_Orientation</members>
-        <members>Weekly_School_Update</members>
-        <name>Flow</name>
-    </types>
-    <types>
-        <members>Campus__c-Campus Layout</members>
-        <members>Class__c-Class Layout</members>
-        <members>Club__c-Club Layout</members>
-        <members>Junction_Class__c-Junction Layout</members>
-        <members>Junction_Club__c-Junction-Club Layout</members>
-        <members>Student__c-SC-Layout</members>
-        <members>Student__c-Student Layout</members>
-        <members>Student_Couselor__c-Student Counselor Layout</members>
-        <members>Teacher__c-Teacher Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>PermissionSet</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>PermissionSetGroup</name>
-    </types>
-    <!--<types>
-        <members>Custom-SC</members>
-        <members>Custom-Principal</members>
-        <members>Custom-Teacher</members>
-        <name>Profile</name>
     </types>-->
-    <types>
-        <members>*</members>
-        <name>QuickAction</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Role</name>
-    </types>
-    <types>
-        <members>Campus__c</members>
-        <members>Candidate__c</members>
-        <members>Club__c</members>
-        <members>Job_Application__c</members>
-        <members>Job_Posting_Site__c</members>
-        <members>Lightsaber__c</members>
-        <members>Moderator__c</members>
-        <members>Offer__c</members>
-        <members>Outbound_Message__c</members>
-        <members>Position__c</members>
-        <members>Position_Approval_Routing__c</members>
-        <members>Referral__c</members>
-        <members>Salary__c</members>
-        <members>Shipment__c</members>
-        <members>Student__c</members>
-        <members>Student_Couselor__c</members>
-        <members>Teacher__c</members>
-        <members>Zip_Code__c</members>
-        <name>SharingRules</name>
-    </types>
-    <types>
-        <members>*</members>
-        <!--<members>Delete_Merchandise_Record</members>-->
-        <name>Workflow</name>
-    </types>
-    <types>
-        <members>Teacher__c.Teacher_Orientation</members>
-        <members>Club__c.Create_A_Club</members>
-        <name>WorkflowTask</name>
-    </types>
-    <types>
-        <members>unfiled$public/Weekly_Parent_Checkin</members>
-        <members>unfiled$public/Teacher_Orientation</members>
-        <members>unfiled$public/Student_Grade_Warning</members>
-        <members>unfiled$public/Approval_for_Graduation</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>Student__c.Email_to_Parents_about_Student_Grades</members>
-        <members>Student__c.Weekly_School_Updates</members>
-        <members>Teacher__c.Orientation_Invitation_for_all_Bachelor_Degree_Teachers</members>
-        <name>WorkflowAlert</name>
-    </types>
-    <types>
-        <members>Student__c.Grad_Is_Ready</members>
-        <members>Student__c.Held_For_Year</members>
-        <members>Student__c.Student_is_Suspened</members>
-        <members>Student__c.Not_Suspended_But_Has_Warning</members>
-        <name>WorkflowFieldUpdate</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>FlexiPage</name>
-    </types>
     <version>51.0</version>
 </Package>

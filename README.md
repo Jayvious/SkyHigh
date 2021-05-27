@@ -21,7 +21,7 @@ The aim of this project was to create an administrative portal for staff members
 
 ## Technologies Used
 
-##### Salesforce
+##### Salesforce:
 ###### Data Models, database, connectivity between pages, controllers, and database
 
 ##### Apex:

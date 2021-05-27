@@ -17,3 +17,26 @@ The Sky High Salesforce org was created to replicate the operations of a high sc
 
 ##### Student Schedule Page:
 ###### A page that displays a list of students, with a link to their respective schedules. Each schedule displays the classes that student has scheduled for the current day, as well as their overall schedule.
+
+## Technologies Used
+
+##### Salesforce:
+###### Data Models, database, connectivity between pages, controllers, and database
+
+##### Apex:
+###### Controller and controller extension logic, triggers, MVC 'controller'
+
+##### SOQL/SOSL:
+###### Database queries
+
+##### Visualforce:
+###### Page structure, MVC 'view'
+
+##### HTML/CSS:
+###### Page styling and structure
+
+##### Git/GitHub:
+###### Version control
+
+##### VSCode & SF Dev Console:
+###### IDE and Code Editors

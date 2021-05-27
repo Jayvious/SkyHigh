@@ -1,0 +1,22 @@
+<apex:page standardController="Student__c" recordSetVar="student" extensions="StudentScheduleLinksExtension">
+<apex:stylesheet value = "{!$Resource.VS_stylesheet_1}"/>
+
+<!--div style="background-color:#ffcf7c"-->
+
+    <div class="header dark_bg">
+        <h6>View Student Schedules</h6>
+    </div>
+    <apex:pageBlock title="Student List">
+
+        <apex:form>
+            <apex:pageBlockTable value="{!student}" var="s" style="background-color: #ffe8c1">
+                <apex:column><apex:facet name="header">Student Name</apex:facet><apex:outputField value="{!s.name}"/></apex:column>
+                <apex:column><apex:facet name="header">Grade Level</apex:facet><apex:outputField value="{!s.grade_level__c}"/></apex:column>
+            <!--apex:column><button onclick="window.location.href='https://skyhighschool1.force.com/StudentSchedule?id=a0M5e000000uxOBEAY';">View Schedule</button></apex:column-->
+                <apex:column><a href="https://skyhighschool1.force.com/StudentSchedule?id={!s.Id}">View Schedule</a></apex:column>
+            </apex:pageBlockTable>
+        </apex:form>
+
+    </apex:pageBlock>
+<!--/div-->
+</apex:page>

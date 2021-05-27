@@ -1,10 +1,10 @@
-## Project 1 -- Experience Cloud Site for Sky High School Org
+# Project 1 -- Experience Cloud Site for Sky High School Org
 
-### Overview
+## Overview
 
 The aim of this project was to create an administrative portal for staff members of the fictional Sky High School highschool, which could be used to view staff and student schedules, add new students, and track student graduation progress.
 
-### Features
+## Features
 
 ##### New Student form:
 ###### This is a form that can be used to add a new student directly to the Salesforce database.
@@ -19,7 +19,7 @@ The aim of this project was to create an administrative portal for staff members
 ###### A page that displays a list of students, with a link to their respective schedules. Each schedule displays the classes that student has scheduled for the current day, as well as their overall schedule.
 
 
-### Technologies Used
+## Technologies Used
 
 ##### Salesforce
 ###### Data Models, database, connectivity between pages, controllers, and database

@@ -1,0 +1,88 @@
+<apex:page controller="StudentScheduleController" applyBodyTag="false">
+    <style>
+        body{
+            background-color: #ffe8c1;
+        }
+    </style>
+
+<apex:stylesheet value="{!$Resource.VS_stylesheet_1}"/>
+
+    <!--h6>Hello, {!$User.FirstName}. Today is {!TODAY()}.</h6-->
+
+
+
+    <div class="header dark_bg" style="padding:0pt 0pt 0pt 5pt">
+    <h6>Student Details</h6>
+    </div>
+
+    <div class="body light_bg" style="padding:10pt 5pt">
+
+        <apex:outputLabel value="Student Name: "/>          <apex:outputField value="{!currentStudent.Name}" style="text-align:left" styleClass="left-justified"/><br/>
+        <apex:outputLabel value="Grade Level: "/>           <apex:outputField value="{!currentStudent.Grade_Level__c}"/><br/>
+        <apex:outputLabel value="Student Counselor: "/>     <apex:outputField value="{!currentStudent.Student_Counselor__c}"/><br/>
+        <apex:outputLabel value="Approved for Graduation: "/><apex:outputField value="{!currentStudent.Approved_for_Gradution__c}"/><br/>
+        <apex:outputLabel value="Graduation Date: "/>       <apex:outputField value="{!currentStudent.Graduation_Date__c}"/><br/>
+        <apex:outputLabel value="GPA: "/>                   <apex:outputField value="{!currentStudent.GPA__c}"/><br/>
+
+    </div>
+
+    <div class="body light_bg" style="height:100%">
+
+        
+        
+    <apex:tabPanel >
+        <apex:tab label="Schedule - Today">
+            <apex:pageBlock title="Schedule for Today:">
+
+                <table style="border-collapse: collapse">
+                <tr><apex:repeat value="{!todaysClassTimes}" var="currentClassTime">
+                    <td class="cell_repeat">{!currentClassTime.Class_Name__c}</td>
+                </apex:repeat></tr>
+                <tr><apex:repeat value="{!todaysClassTimes}" var="currentClassTime">
+                    <td class="cell_repeat"><apex:outputField value="{!currentClassTime.Start_Time__c}"/> - <apex:outputField value="{!currentClassTime.End_Time__c}"/></td>
+                </apex:repeat></tr>
+                </table>
+
+<!--
+                <apex:dataTable value="{!todaysClasses}" var="studentClass" bgcolor="yellow" border="5" cellpadding="2" cellspacing="2">
+                    <apex:column>{!studentClass.Name}</apex:column>
+                    <apex:column>
+                    <apex:dataTable value="{!studentClass.Class_Meeting_Times1__r}" var="classMeetingTime" cellspacing="5">
+                        <apex:column><apex:outputField value="{!classMeetingTime.Day__c}"/></apex:column>
+                        <apex:column><apex:outputField value="{!classMeetingTime.Start_Time__c}"/></apex:column>
+                        <apex:column><apex:outputField value="{!classMeetingTime.End_Time__c}"/></apex:column>
+                        <apex:column><apex:outputField value="{!classMeetingTime.Duration__c}"/></apex:column>
+                    </apex:dataTable>
+                    </apex:column>
+                </apex:dataTable>
+-->
+            </apex:pageBlock>
+        </apex:tab>
+
+        <apex:tab label="Schedule - Weekly">
+            <apex:pageBlock title="Weekly Class Schedule:">
+
+                <apex:dataTable value="{!studentClasses}" var="studentClass" bgcolor="yellow" border="5" cellpadding="2" cellspacing="2">
+                    <apex:column >{!studentClass.Name}</apex:column>
+                    <apex:column >
+                    <apex:dataTable value="{!studentClass.Class_Meeting_Times1__r}" var="classMeetingTime" cellspacing="5">
+                        <apex:column ><apex:outputField value="{!classMeetingTime.Day__c}"/></apex:column>
+                        <apex:column ><apex:outputField value="{!classMeetingTime.Start_Time__c}"/></apex:column>
+                        <apex:column ><apex:outputField value="{!classMeetingTime.End_Time__c}"/></apex:column>
+                        <apex:column ><apex:outputField value="{!classMeetingTime.Duration__c}"/></apex:column>
+                    </apex:dataTable>
+                    </apex:column>
+                </apex:dataTable>
+ 
+            </apex:pageBlock>
+        </apex:tab>
+    </apex:tabPanel>
+
+
+    <br/>
+    <a href="https://skyhighschool1.force.com/apex/StudentScheduleList">&lt;&lt;Back</a>
+    <br/>
+
+</div>
+
+</apex:page>

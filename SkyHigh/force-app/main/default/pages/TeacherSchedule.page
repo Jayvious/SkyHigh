@@ -1,0 +1,52 @@
+<apex:page standardController="Teacher__c" extensions="TeacherExtension" cache="false" expires="0" sidebar="false">
+    <apex:includeScript value="{! $Resource.jQuery }"/>
+    <apex:includeScript value="{! $Resource.jQueryMinJS }"/>
+    <apex:stylesheet value="{! $Resource.jQueryMinCss }"/>
+        <script type="text/javascript">
+            $j = jQuery.noConflict();
+            $j(document).ready(function($) {
+              $j("#accordionTest").accordion({collapsible: true, active: false});
+            });
+        </script>
+        <style>
+            .accordion
+            {
+                display:block;
+            }
+        </style>
+        <apex:image id="theImage2" value="{!IMAGEPROXYURL ('https://images.squarespace-cdn.com/content/v1/5b5aa69d372b9692c7cb3bf9/1590961844370-GH10Q9QWVCJVO85Y7NQE/ke17ZwdGBToddI8pDm48kCgg7PAIJ413pZYxWjOgVH4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnEcda4RazTHB0VWFHvL1SZkzfZZpIkN4jruJS8NcCx7oMw9yTMIXw39iExkUuKkFQQ/img1.jpg?format=1500w')}" alt="Graduation Celebration" width="100%" style="text-align:center;"/>
+        
+       
+        
+        
+        <apex:form >
+            <div id="accordionTest">
+                    <p class="accordion"><a href="#">Header 1</a></p>
+                <div>Content 1</div>
+                    <p class="accordion"><a href="#">Header 2</a></p>
+                <div>
+                    <apex:pageBlock id="teacher_list">  
+                        <apex:pageBlockSection >
+                            <apex:pageBlockTable value="{!classes}" var="cls" border="5" id="theTable" rendered="true">
+                                <apex:column style="font-family: monospace ; font-size: 2em;"><a href="#">{!cls.classVar.Name}<br/>{!cls.classVar.campus__r.name}</a></apex:column>
+                                <apex:column style="font-family: monospace ; font-size: 2em;">
+                                    <apex:pageBlockTable value="{!cls.jC}" var="j">
+                                        {!j.student__r.name}
+                                        <!--<apex:column ><a href="https://universalcontainers-1d0.lightning.force.com/lightning/r/Student__c/{!j.student__r.id}/view">{!j.student__r.name}</a></apex:column>-->
+                                    </apex:pageBlockTable>
+                                </apex:column>
+                                <apex:column style="font-family: monospace ; font-size: 2em;">
+                                    <apex:pageBlockTable value="{!cls.meetingTime}" var="cmt">
+                                        <apex:column style="font-family: monospace ; font-size: 2em;">{!cmt.Day__c}
+                                            <apex:outputField value="{!cmt.Start_Time__c}"/>
+                                            <apex:outputField value="{!cmt.End_Time__c}"/>
+                                        </apex:column>
+                                    </apex:pageBlockTable>
+                                </apex:column>
+                            </apex:pageBlockTable>
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                </div>
+            </div>
+        </apex:form>
+</apex:page>

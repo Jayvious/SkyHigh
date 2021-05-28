@@ -44,6 +44,7 @@ The Sky High Salesforce org was created to replicate the operations of a high sc
 ## Getting Started
 ##### Successfully Retrieve and Deploy between Orgs
 1. ###### Clone the repository down locally.
+   - ###### `git clone https://github.com/Jayvious/SkyHigh`
 2. ###### Deploy to fresh org using ANT or Visual Studio Code using:
    - ###### `sfdx force:source:deploy -x manifest/package.xml`
 

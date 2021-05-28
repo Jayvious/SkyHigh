@@ -40,3 +40,26 @@ The Sky High Salesforce org was created to replicate the operations of a high sc
 
 ##### VSCode & SF Dev Console:
 ###### IDE and Code Editors
+
+## Getting Started
+##### Successfully Retrieve and Deploy between Orgs
+1. ###### Clone the repository down locally.
+2. ###### Deploy to fresh org using ANT or Visual Studio Code using:
+   - ###### `sfdx force:source:deploy -x manifest/package.xml`
+
+##### See changes as System Admin
+3. ###### In your org, navigate to Setup > Apps > App Manager 
+4. ###### Click the dropdown arrow next to SkyHigh and click edit
+5. ###### In the User Profiles section, add the System Admin Profile (as well as any other profiles you want)
+
+##### Enable Tab Visabliity
+6. ###### Next, navigate to Setup > Users > Profiles
+7. ###### Select the System Administrator profile (or any other profile you want)
+   - ###### if Enhanced Profile User Interface enabled:
+     - ###### In App > Object Settings, search for each of the following Objects and set their tab visibility to Default-On"
+     - ###### Campuses, Classes, Clubs, Student Counselors, Students, and Teachers 
+   - ###### if Enhance Profile User Interface disabled:
+     - ###### Click edit, and then scroll down to tab settings and set the following to Default-On:
+     - ###### Campuses, Classes, Clubs, Student Counselors, Students, and Teachers 
+
+8. ##### You should now be able to see all necessary objects, tabs, and apps to interact with the new additions.

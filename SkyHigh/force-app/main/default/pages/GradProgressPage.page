@@ -1,9 +1,9 @@
-<apex:page showHeader="true" standardController="Student__c" recordSetVar="students" >    
+<apex:page showHeader="true" standardController="Student__c" recordSetVar="students" > 
+                <apex:image id="theImage5" value="{!URLFOR ($Resource.GradProgressFinal)}" alt="Graduation Celebration" width="100%" style="text-align:center;"/>
+
     <apex:form >
         <apex:pageBlock >
-            <h1 style="font-family: monospace; font-size: 4em; margin-left: 24%; padding-bottom: 30px">STUDENT GRADUATION DASHBOARD</h1>
                                               
-            <apex:image id="theImage2" value="{!IMAGEPROXYURL('https://images.squarespace-cdn.com/content/v1/5b5aa69d372b9692c7cb3bf9/1590961844370-GH10Q9QWVCJVO85Y7NQE/ke17ZwdGBToddI8pDm48kCgg7PAIJ413pZYxWjOgVH4UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYwL8IeDg6_3B-BRuF4nNrNcQkVuAT7tdErd0wQFEGFSnEcda4RazTHB0VWFHvL1SZkzfZZpIkN4jruJS8NcCx7oMw9yTMIXw39iExkUuKkFQQ/img1.jpg?format=1500w')}" alt="Graduation Celebration" width="100%" style="text-align:center;"/>
             
             
             <br/>
@@ -17,14 +17,12 @@
             </apex:panelGrid> 
             
             <br/>
-            <br/>
-            <br/>
+
             
-            <h1 style="font-family: monospace; font-size: 4em; margin-left: 25%; padding: 10px">GRADUATION PROGRESS LIST</h1>
+            <!--<h1 style="font-family: monospace; font-size: 4em; margin-left: 25%; padding: 10px">GRADUATION PROGRESS LIST</h1>-->
                 
             <br/>
-            <br/>
-            <br/>
+
             
             <apex:selectList value="{! filterId }" size="1" style="background-color: #f9b644; font-size: 3em; width: 100%; margin-bottom: 20px; margin-top: 20px; padding: 5px; font-family: copperplate;">
                 <apex:selectOptions value="{! listViewOptions }"/>

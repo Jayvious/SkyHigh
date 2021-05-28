@@ -1,7 +1,9 @@
 <apex:page standardController="Student__c">
+    <apex:image id="theImage5" value="{!URLFOR ($Resource.NewStudent)}" alt="Graduation Celebration" width="100%" style="text-align:center;"/>
+    
     <apex:form >
-        <h1 style = "font-family:monospace; font-size:4em;">New Student</h1>
-        <apex:pageBlock title="Enter the New Student">
+        <!--<h1 style = "font-family:monospace; font-size:4em;">New Student</h1>-->
+        <apex:pageBlock title="Enter New Student">
             <apex:pageMessages />
             <apex:pageBlockSection >
                 <apex:inputField value="{!Student__c.Name}"/>

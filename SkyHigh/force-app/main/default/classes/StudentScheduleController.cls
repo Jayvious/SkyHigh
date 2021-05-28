@@ -3,7 +3,7 @@ public with sharing class StudentScheduleController {
 
     final public Student__c currentStudent{get; private set;}
 
-    final public String dayOfWeek{get; private set;}
+    transient final public String dayOfWeek{get; private set;}
 
     public List<Class__c> studentClasses{get; private set;}
     public List<Class__C> todaysClasses{get; private set;}

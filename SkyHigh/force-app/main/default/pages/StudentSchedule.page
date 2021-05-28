@@ -1,7 +1,7 @@
 <apex:page controller="StudentScheduleController" applyBodyTag="false">
     <style>
         body{
-            background-color: #ffe8c1;
+            background-color: #ffffff;
         }
     </style>
 
@@ -11,9 +11,10 @@
 
     <!--h6>Hello, {!$User.FirstName}. Today is {!TODAY()}.</h6-->
 
+    <apex:image id="theImage5" value="{!URLFOR ($Resource.studentSchedule)}" alt="Graduation Celebration" width="100%" style="text-align:center;"/>
 
 
-    <div class="header dark_bg" style="padding:0pt 0pt 0pt 5pt">
+    <div class="header dark_bg" style="padding:0pt 0pt 0pt 5pt; font-family: monospace; font-size: 2em;">
     <h6>Student Details</h6>
     </div>
 
@@ -21,14 +22,14 @@
         <a href="https://skyhighschool1.force.com/apex/StudentScheduleList" style="padding: 2pt 1pt 0pt 1pt">&lt;&lt;Back</a>
         <br/>
 
-        <div style="padding:10pt 5pt">
-        <apex:outputLabel value="Student Name: "/>          <apex:outputField value="{!currentStudent.Name}"/><br/>
-        <apex:outputLabel value="Grade Level: "/>           <apex:outputField value="{!currentStudent.Grade_Level__c}"/><br/>
-        <apex:outputLabel value="Student Counselor: "/>     <apex:outputField value="{!currentStudent.Student_Counselor__c}"/><br/>
+        <div style="padding:10pt 5pt;">
+        <apex:outputLabel value="Student Name: " style="font-family: monospace; font-size: 2em;"/>          <apex:outputField value="{!currentStudent.Name}" /><br/>
+        <apex:outputLabel value="Grade Level: " style="font-family: monospace; font-size: 2em;"/>           <apex:outputField value="{!currentStudent.Grade_Level__c}"/><br/>
+        <apex:outputLabel value="Student Counselor: " style="font-family: monospace; font-size: 2em;"/>     <apex:outputField value="{!currentStudent.Student_Counselor__c}"/><br/>
         <br/>
-        <apex:outputLabel value="Approved for Graduation: "/><apex:outputField value="{!currentStudent.Approved_for_Gradution__c}"/><br/>
-        <apex:outputLabel value="Graduation Date: "/>       <apex:outputField value="{!currentStudent.Graduation_Date__c}"/><br/>
-        <apex:outputLabel value="GPA: "/>                   <apex:outputField value="{!currentStudent.GPA__c}"/><br/>
+        <apex:outputLabel value="Approved for Graduation: " style="font-family: monospace; font-size: 2em;"/><apex:outputField value="{!currentStudent.Approved_for_Gradution__c}"/><br/>
+        <apex:outputLabel value="Graduation Date: " style="font-family: monospace; font-size: 2em;"/>       <apex:outputField value="{!currentStudent.Graduation_Date__c}"/><br/>
+        <apex:outputLabel value="GPA: " style="font-family: monospace; font-size: 2em;"/>                   <apex:outputField value="{!currentStudent.GPA__c}"/><br/>
         </div>
     </div>
 

@@ -1,39 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <!-- The package.xml with the full list of required metadata fields is in the commit done before 5/21/2021 (I.E. commit - d623ca1) -->
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-        <members>*</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types> <!-- this refers to visual force pages -->
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <!--<types> We shouldn't need these, but gonna leave them just in case.
-        <members>Class__c</members>
-        <members>Club__c</members>
-        <members>Junction_Class__c</members>
-        <members>Junction_Club__c</members>
-        <members>Student__c</members>
-        <members>Student_Couselor__c</members>
-        <members>Campus__c</members>
-        <members>Teacher__c</members>
-        <name>CustomObject</name>
-    </types>-->
-    <version>51.0</version>
-</Package>
-<!-- This is the package.xml for the final submission. Gonna leave the above part take make deploying a retrieving smoother til then.
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
@@ -61,6 +25,18 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
+        <members>Student__c.NoStudentDups</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>Student__c.Student_Matching</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
+        <members>Student__c</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
@@ -72,10 +48,6 @@
         <members>Student__c.Suspension_Approval</members>
         <members>Student__c.Approve_Graduation</members>
         <name>ApprovalProcess</name>
-    </types>
-    <types>
-        <members>Student__c.NoStudentDups</members>
-        <name>DuplicateRule</name>
     </types>
     <types>
         <members>*</members>
@@ -226,4 +198,3 @@
     </types>
     <version>51.0</version>
 </Package>
--->

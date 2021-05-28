@@ -142,6 +142,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>StudentScheduleTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>StudentWrapper</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -526,6 +530,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>TeacherSchedule</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>TeacherScheduleList</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>

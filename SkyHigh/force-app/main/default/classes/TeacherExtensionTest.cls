@@ -45,7 +45,7 @@ public with sharing class TeacherExtensionTest {
         TeacherExtension teachEx = new TeacherExtension(sc);
         TeacherExtension teachEx2 = new TeacherExtension(teach); // test for the overload method
         Test.stopTest();
-        
+        // test
         
 
         System.assertEquals(teachEx.classes[0].classVar.name, cls.name);

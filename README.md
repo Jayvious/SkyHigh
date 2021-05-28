@@ -62,4 +62,4 @@ The Sky High Salesforce org was created to replicate the operations of a high sc
      - ###### Click edit, and then scroll down to tab settings and set the following to Default-On:
      - ###### Campuses, Classes, Clubs, Student Counselors, Students, and Teachers 
 
-8. ##### You should now be able to see all necessary objects, tabs, and apps to interact with the new additions.
+8. ###### You should now be able to see all necessary objects, tabs, and apps to interact with the new additions.

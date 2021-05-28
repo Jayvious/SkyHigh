@@ -74,6 +74,10 @@
         <name>ApprovalProcess</name>
     </types>
     <types>
+        <members>Student__c.NoStudentDups</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
         <members>*</members>
         <name>CustomApplicationComponent</name>
     </types>

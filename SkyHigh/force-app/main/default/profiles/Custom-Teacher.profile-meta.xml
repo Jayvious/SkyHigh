@@ -70,6 +70,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>DOWm</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ForgotPasswordController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -171,6 +175,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>classScheduleController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>dowMaps</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>

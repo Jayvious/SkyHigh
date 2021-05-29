@@ -41,6 +41,8 @@
         <apex:tab label="Schedule - Today">
             <apex:pageBlock title="Schedule for Today:">
 
+                <apex:outputText value="No classes today." rendered="{!noClassesToday}"/>
+
                 <table style="border-collapse: collapse">
                 <tr><apex:repeat value="{!todaysClassTimes}" var="currentClassTime">
                     <td class="cell_repeat">{!currentClassTime.Class_Name__c}</td>
@@ -50,33 +52,23 @@
                 </apex:repeat></tr>
                 </table>
 
-<!--
-                <apex:dataTable value="{!todaysClasses}" var="studentClass" bgcolor="yellow" border="5" cellpadding="2" cellspacing="2">
-                    <apex:column>{!studentClass.Name}</apex:column>
-                    <apex:column>
-                    <apex:dataTable value="{!studentClass.Class_Meeting_Times1__r}" var="classMeetingTime" cellspacing="5">
-                        <apex:column><apex:outputField value="{!classMeetingTime.Day__c}"/></apex:column>
-                        <apex:column><apex:outputField value="{!classMeetingTime.Start_Time__c}"/></apex:column>
-                        <apex:column><apex:outputField value="{!classMeetingTime.End_Time__c}"/></apex:column>
-                        <apex:column><apex:outputField value="{!classMeetingTime.Duration__c}"/></apex:column>
-                    </apex:dataTable>
-                    </apex:column>
-                </apex:dataTable>
--->
             </apex:pageBlock>
         </apex:tab>
+
+
 
         <apex:tab label="Schedule - Weekly">
             <apex:pageBlock title="Weekly Class Schedule:">
 
-                <apex:dataTable value="{!studentClasses}" var="studentClass" bgcolor="yellow" border="5" cellpadding="2" cellspacing="2">
+                <apex:outputText value="No classes scheduled for this student." rendered="{!noClasses}"/>
+
+                <apex:dataTable value="{!studentClasses}" var="studentClass" bgcolor="#fdf2de" border="5" cellpadding="2" cellspacing="2" rendered="{!NOT(noClasses)}">
                     <apex:column >{!studentClass.Name}</apex:column>
                     <apex:column >
                     <apex:dataTable value="{!studentClass.Class_Meeting_Times1__r}" var="classMeetingTime" cellspacing="5">
                         <apex:column ><apex:outputField value="{!classMeetingTime.Day__c}"/></apex:column>
                         <apex:column ><apex:outputField value="{!classMeetingTime.Start_Time__c}"/></apex:column>
                         <apex:column ><apex:outputField value="{!classMeetingTime.End_Time__c}"/></apex:column>
-                        <apex:column ><apex:outputField value="{!classMeetingTime.Duration__c}"/></apex:column>
                     </apex:dataTable>
                     </apex:column>
                 </apex:dataTable>

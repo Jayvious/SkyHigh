@@ -26,11 +26,12 @@ public class StudentScheduleTest {
     }
     private static List<Class_Meeting_Time__c> newTimes(Class__c tClass){
         List<Class_Meeting_Time__c> tTimes = new List<Class_Meeting_Time__c>();
-        tTimes.add(new Class_Meeting_Time__c(Class__c=tClass.Id, Day__c='Monday', Start_Time__c=Time.newInstance(10, 0, 0, 0), End_Time__c=Time.newInstance(11, 0, 0, 0)));
-        tTimes.add(new Class_Meeting_Time__c(Class__c=tClass.Id, Day__c='Tuesday', Start_Time__c=Time.newInstance(10, 0, 0, 0), End_Time__c=Time.newInstance(11, 0, 0, 0)));
-        tTimes.add(new Class_Meeting_Time__c(Class__c=tClass.Id, Day__c='Wednesday', Start_Time__c=Time.newInstance(10, 0, 0, 0), End_Time__c=Time.newInstance(11, 0, 0, 0)));
-        tTimes.add(new Class_Meeting_Time__c(Class__c=tClass.Id, Day__c='Thursday', Start_Time__c=Time.newInstance(10, 0, 0, 0), End_Time__c=Time.newInstance(11, 0, 0, 0)));
-        tTimes.add(new Class_Meeting_Time__c(Class__c=tClass.Id, Day__c='Friday', Start_Time__c=Time.newInstance(10, 0, 0, 0), End_Time__c=Time.newInstance(11, 0, 0, 0)));
+
+        Map<Integer,String> dowMap = DOWm.getDowMap();
+
+        for (integer dayNum=0; dayNum<=4; ++dayNum){
+            tTimes.add(new Class_Meeting_Time__c(Class__c=tClass.Id, Day__c=dowMap.get(dayNum), Start_Time__c=Time.newInstance(10, 0, 0, 0), End_Time__c=Time.newInstance(11, 0, 0, 0)));
+        }
         return tTimes;
     }
     private static PageReference makePage(Student__c tStudent){
@@ -144,7 +145,49 @@ public class StudentScheduleTest {
     }
 
     @isTest
-    private static void ensureNav(){
-        
+    private static void ensureHasClassTodayCheck(){
+
+        Student__c tStudent = newStudent();
+        insert tStudent;
+        Teacher__c tTeacher = newTeacher();
+        insert tTeacher;
+        Class__c tClass = newClass(tTeacher);
+        insert tClass;
+        Junction_Class__c tJC = newJC(tClass, tStudent);
+        insert tJC;
+
+        Map<String,Integer> dowNumMap = DOWm.getDowNumMap();
+
+        List<Class_Meeting_Time__c> blankTimes = newTimes(tClass);
+        blankTimes.remove(dowNumMap.get(getDoW()));
+        insert blankTimes;
+
+        PageReference testPage = makePage(tStudent);
+        Test.setCurrentPage(testPage);
+        StudentScheduleController tSST = new StudentScheduleController();
+
+        System.assert(tSST.noClassesToday==true);
+
+
+    }
+
+    @isTest
+    private static void ensureHasClassCheck(){
+
+        Student__c tStudent = newStudent();
+        insert tStudent;
+        Teacher__c tTeacher = newTeacher();
+        insert tTeacher;
+        Class__c tClass = newClass(tTeacher);
+        insert tClass;
+
+        List<Class_Meeting_Time__c> tTimes = newTimes(tClass);
+        insert tTimes;
+        PageReference testPage = makePage(tStudent);
+        Test.setCurrentPage(testPage);
+        StudentScheduleController tSST = new StudentScheduleController();
+
+        System.assert(tSST.noClasses==true);
+
     }
 }

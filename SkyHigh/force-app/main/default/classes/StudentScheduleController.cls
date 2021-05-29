@@ -3,16 +3,41 @@ public with sharing class StudentScheduleController {
 
     final public Student__c currentStudent{get; private set;}
 
-    transient final public String dayOfWeek{get; private set;}
+    final public String dayOfWeek{get; private set;}
 
     public List<Class__c> studentClasses{get; private set;}
     public List<Class__C> todaysClasses{get; private set;}
     public List<Class_Meeting_Time__c> todaysClassTimes{get; private set;}
 
+
+    /*
     public PageReference test(){
         PageReference testing = new PageReference('/apex/StudentSchedule?id=a0M5e000000uxOBEAY');
         testing.setRedirect(true);
         return testing;
+    }
+    */
+
+    transient public Boolean noClasses{
+        get{
+            if (noClasses==NULL)
+                noClasses = (studentClasses.size()==0);
+            return noClasses;
+        }
+        private set{
+
+        }
+    }
+
+    transient public Boolean noClassesToday{
+        get{
+            if (noClassesToday==NULL)
+                noClassesToday = (todaysClasses.size()==0);
+            return noClassesToday;
+        }
+        private set{
+
+        }
     }
  
 
@@ -47,7 +72,7 @@ public with sharing class StudentScheduleController {
         }
 
         studentClasses = [ SELECT Id, Name, Campus__c, Address__c, Teacher__c, (SELECT Day__c, Start_Time__c, End_Time__c, Duration__c, Class_Name__c
-                            FROM Class_Meeting_Times1__r) FROM Class__c WHERE Id IN :classIds];
+                            FROM Class_Meeting_Times1__r) FROM Class__c WHERE Id IN :classIds ORDER BY Name];
 
 
         //Sort through the class list, and create a list of class meeting times that occur today

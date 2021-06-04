@@ -53,19 +53,21 @@ The Sky High Salesforce org was created to replicate the operations of a high sc
 4. ###### In VS Studio Code, in force-app\main\default 
    - ###### Right-click the documents folder and deploy source to org
    - ###### After that successfully deploys, open the file in force-app\main\default\sites\Sky_High.site-meta.xml 
-   - ###### Change the siteAdmin and siteGuestRecordDefaultOwner to a user's username in your org   
+   - ###### Change the siteAdmin and siteGuestRecordDefaultOwner to a user's username in your org and save
    - ###### Deploy to org using: `sfdx force:source:deploy -x manifest/package.xml`
-
+   - ###### (If there is an error deploying due to a previous site already using these parameters)
+      - ###### add URL paths to any pre-existing sites, as this site uses the default blank URL path 
+   
 ##### See changes as System Admin
 5. ###### In your org, navigate to Setup > Apps > App Manager 
 6. ###### Click the dropdown arrow next to SkyHigh and click edit
 7. ###### In the User Profiles section, add the System Admin Profile (as well as any other profiles you want)
 
-##### Enable Tab Visabliity
+##### Enable Tab Visability
 8. ###### Next, navigate to Setup > Users > Profiles
 9. ###### Select the System Administrator profile (or any other profile you want)
    - ###### if Enhanced Profile User Interface enabled:
-     - ###### In App > Object Settings, search for each of the following Objects and set their tab visibility to Default-On"
+     - ###### In App > Object Settings, search for each of the following Objects and set their tab visibility to Default-On:
      - ###### Campuses, Classes, Clubs, Student Counselors, Graduation Progress, New Student, Students, Student Schedules, Teachers, Teacher Schedule, and Teacher Schedules
    - ###### if Enhance Profile User Interface disabled:
      - ###### Click edit, and then scroll down to tab settings and set the following to Default-On:

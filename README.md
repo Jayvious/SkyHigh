@@ -45,12 +45,12 @@ The Sky High Salesforce org was created to replicate the operations of a high sc
 ##### Successfully Retrieve and Deploy between Orgs
 1. ###### Clone the repository down locally.
    - ###### `git clone https://github.com/Jayvious/SkyHigh`
-2. In your org, go to Setup > Feature Settings > Digital Experiences > Settings 
+2. ###### In your org, go to Setup > Feature Settings > Digital Experiences > Settings 
    - ###### Click Enable Digital Experiences
    - ###### Give this site a domain name of your choosing
-3. Go back to Setup > Feature Settings > Digital Experiences > Settings 
+3. ###### Go back to Setup > Feature Settings > Digital Experiences > Settings 
    - ###### Click Enable Experience Bundles API
-4. In VS Studio Code, in force-app\main\default 
+4. ###### In VS Studio Code, in force-app\main\default 
    - ###### Right-click the documents folder and deploy source to org
    - ###### After that successfully deploys, open the file in force-app\main\default\sites\Sky_High.site-meta.xml 
    - ###### Change the siteAdmin and siteGuestRecordDefaultOwner to a user's username in your org   
